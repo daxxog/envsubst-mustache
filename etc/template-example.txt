@@ -1,1 +1,11 @@
+{{#USER}}
+{{#SHELL}}
 Hello {{USER}} you are using {{SHELL}}
+{{/SHELL}}
+{{^SHELL}}
+Hello {{USER}} you do not have the SHELL environment variable set
+{{/SHELL}}
+{{/USER}}
+{{^USER}}
+I don't know who you are because you do not have the USER environment variable set
+{{/USER}}
