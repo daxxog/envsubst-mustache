@@ -1,5 +1,10 @@
 from setuptools import setup, find_packages
 
+
+requirements = [
+    "chevron==0.13.1"
+]
+
 with open('README.md') as f:
     long_desc = f.read()
 
@@ -18,6 +23,7 @@ setup(
         'Topic :: Text Processing :: Markup'
     ],
     license='Apache 2.0',
+    install_requires=requirements,
     py_modules=['envsubst_mustache'],
     packages=find_packages("src"),
     package_dir={'': 'src'},
