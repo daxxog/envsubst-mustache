@@ -9,7 +9,7 @@ envsubst-mustache < etc/template-example.txt
 ```
 
 ### Advanced Example In Dockerfile
-This replaces envsubst in a debian-based docker image with envsubst-mustace (e.g. in nginx)
+This replaces envsubst in a debian-based docker image with envsubst-mustache (e.g. in nginx)
 ```
 # upgrade debian packages
 ENV DEBIAN_FRONTEND="noninteractive"
